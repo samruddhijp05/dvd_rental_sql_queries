@@ -1,0 +1,4 @@
+SQL Analysis of DVD Rental Database
+The following set of 10 diverse SQL queries provides an in-depth analysis of a DVD rental database. The queries cover various aspects of the business, including customer behaviors, film properties, rental patterns, and staff performance.
+
+In addition, for a more in-depth view and to facilitate better comprehension, the results of each query are extracted and stored as csv files in the "query" folder. Each file corresponds to the respective query, allowing readers to explore the data in a more familiar format, aiding in data interpretation, and making it easier to generate insights or perform further analysis.
