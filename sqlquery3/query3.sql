@@ -1,6 +1,5 @@
-SELECT c.customer_id, c.first_name, c.last_name, p.amount 
-FROM customer as c
-LEFT JOIN payment as p 
-ON c.customer_id = p.customer_id
-ORDER BY p.amount DESC
-LIMIT 10;
+select rating,title, sum(length) as length
+from film
+where length<=90 AND RATING IN ('G','R')
+group by rating, title
+order by length desc;
