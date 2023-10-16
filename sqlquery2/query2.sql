@@ -1,1 +1,5 @@
-SELECT customer_id , count(*) AS Rental_Count FROM rental WHERE rental_date BETWEEN '2005-07-01' AND '2005-08-31' GROUP BY customer_id ORDER BY Rental_Count DESC;
+SELECT film.title, COUNT(actor.actor_id) as actor_count
+FROM film
+INNER JOIN film_actor ON film.film_id = film_actor.film_id
+INNER JOIN actor ON actor.actor_id = film_actor.actor_id
+GROUP BY film.title;
