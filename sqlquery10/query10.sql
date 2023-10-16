@@ -1,3 +1,4 @@
+## The query will retrieve the country wise its customer base and total sales records 
 SELECT country, count(DISTINCT customer_id) AS customer_base, SUM(amount) AS total_sales
 FROM country
 JOIN city
