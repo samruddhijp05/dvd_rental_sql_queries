@@ -1,3 +1,8 @@
-SELECT rental_id, customer_id, rental_date, 
-       RANK() OVER (PARTITION BY customer_id ORDER BY rental_date) as rental_rank
-FROM rental;
+SELECT c.name AS genre, ROUND(AVG(f.rental_rate),2) AS Average_rental_rate
+FROM category c
+JOIN film_category fc
+USING(category_id)
+JOIN film f
+USING(film_id)
+GROUP BY 1
+ORDER BY 2 DESC;
